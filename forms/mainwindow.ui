@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>975</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Acquisition</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="0">
+     <layout class="QVBoxLayout" name="mainLayout">
+      <item>
+       <widget class="QSplitter" name="horizontalLayout_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <widget class="QWidget" name="layoutWidget">
+         <layout class="QVBoxLayout" name="itemListAndSearchFormLayout">
+          <item>
+           <widget class="QTreeView" name="treeView"/>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QComboBox" name="buyoutTypeComboBox"/>
+            </item>
+            <item>
+             <widget class="QComboBox" name="buyoutCurrencyComboBox"/>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="buyoutValueLineEdit"/>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>View:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="viewComboBox"/>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </widget>
+        <widget class="QScrollArea" name="scrollArea">
+         <widget class="QWidget" name="scrollAreaWidgetContents">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>349</width>
+            <height>638</height>
+           </rect>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="topMargin">
+            <number>11</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="itemLayout">
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item>
+              <widget class="QWidget" name="widget" native="true">
+               <property name="minimumSize">
+                <size>
+                 <width>250</width>
+                 <height>0</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="nameLabel">
+               <property name="text">
+                <string>Select an item</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QLabel" name="imageLabel"/>
+             </item>
+             <item>
+              <widget class="QTabWidget" name="itemInfoTypeTabs">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="currentIndex">
+                <number>0</number>
+               </property>
+               <widget class="QWidget" name="itemInfoTooltip">
+                <attribute name="title">
+                 <string>Tooltip</string>
+                </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout_2">
+                 <item>
+                  <widget class="QWidget" name="itemTooltipWidget" native="true">
+                   <layout class="QVBoxLayout" name="itemTooltipLayout">
+                    <property name="spacing">
+                     <number>0</number>
+                    </property>
+                    <property name="leftMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="topMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="rightMargin">
+                     <number>0</number>
+                    </property>
+                    <property name="bottomMargin">
+                     <number>0</number>
+                    </property>
+                    <item>
+                     <layout class="QHBoxLayout" name="itemNameLayout">
+                      <property name="spacing">
+                       <number>0</number>
+                      </property>
+                      <property name="bottomMargin">
+                       <number>0</number>
+                      </property>
+                      <item>
+                       <widget class="QLabel" name="itemHeaderLeft">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QWidget" name="itemNameContainerWidget" native="true">
+                        <property name="sizePolicy">
+                         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                          <horstretch>0</horstretch>
+                          <verstretch>0</verstretch>
+                         </sizepolicy>
+                        </property>
+                        <layout class="QVBoxLayout" name="itemNameContainer">
+                         <property name="spacing">
+                          <number>0</number>
+                         </property>
+                         <property name="leftMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="topMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="rightMargin">
+                          <number>0</number>
+                         </property>
+                         <property name="bottomMargin">
+                          <number>0</number>
+                         </property>
+                         <item>
+                          <widget class="QLabel" name="itemNameFirstLine">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                         <item>
+                          <widget class="QLabel" name="itemNameSecondLine">
+                           <property name="text">
+                            <string/>
+                           </property>
+                          </widget>
+                         </item>
+                        </layout>
+                       </widget>
+                      </item>
+                      <item>
+                       <widget class="QLabel" name="itemHeaderRight">
+                        <property name="text">
+                         <string/>
+                        </property>
+                       </widget>
+                      </item>
+                     </layout>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="propertiesLabel">
+                      <property name="maximumSize">
+                       <size>
+                        <width>16777215</width>
+                        <height>16777215</height>
+                       </size>
+                      </property>
+                      <property name="wordWrap">
+                       <bool>true</bool>
+                      </property>
+                     </widget>
+                    </item>
+                   </layout>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QPushButton" name="uploadTooltipButton">
+                   <property name="text">
+                    <string>Upload to imgur</string>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="itemInfoText">
+                <attribute name="title">
+                 <string>Text</string>
+                </attribute>
+                <layout class="QVBoxLayout" name="verticalLayout">
+                 <item>
+                  <widget class="QLabel" name="itemTextTooltip">
+                   <property name="sizePolicy">
+                    <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+                     <horstretch>0</horstretch>
+                     <verstretch>0</verstretch>
+                    </sizepolicy>
+                   </property>
+                   <property name="text">
+                    <string/>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+               <widget class="QWidget" name="tab">
+                <attribute name="title">
+                 <string>Hide</string>
+                </attribute>
+               </widget>
+              </widget>
+             </item>
+             <item>
+              <spacer name="verticalSpacer">
+               <property name="orientation">
+                <enum>Qt::Vertical</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>20</width>
+                 <height>40</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QLabel" name="locationLabel"/>
+             </item>
+             <item>
+              <widget class="QLabel" name="minimapLabel"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>975</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuShop">
+    <property name="title">
+     <string>Shop</string>
+    </property>
+    <addaction name="actionForum_shop_thread"/>
+    <addaction name="actionShop_template"/>
+    <addaction name="actionCopy_shop_data_to_clipboard"/>
+    <addaction name="actionUpdate_shop"/>
+    <addaction name="actionAutomatically_update_shop"/>
+   </widget>
+   <widget class="QMenu" name="menuItems">
+    <property name="title">
+     <string>Tabs</string>
+    </property>
+    <addaction name="actionRefresh_selected"/>
+    <addaction name="actionRefresh"/>
+    <addaction name="separator"/>
+    <addaction name="actionAutomatically_refresh_items"/>
+    <addaction name="actionItems_refresh_interval"/>
+   </widget>
+   <widget class="QMenu" name="menuAuto_online">
+    <property name="title">
+     <string>Auto online</string>
+    </property>
+    <addaction name="actionControl_poe_xyz_is_URL"/>
+    <addaction name="actionRemoteScript"/>
+    <addaction name="actionAutomatically_refresh_online_status"/>
+   </widget>
+   <widget class="QMenu" name="menuCurrency">
+    <property name="title">
+     <string>Currency</string>
+    </property>
+    <addaction name="actionList_currency"/>
+    <addaction name="actionExport_currency"/>
+   </widget>
+   <addaction name="menuItems"/>
+   <addaction name="menuShop"/>
+   <addaction name="menuAuto_online"/>
+   <addaction name="menuCurrency"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionForum_shop_thread">
+   <property name="text">
+    <string>Forum shop thread...</string>
+   </property>
+  </action>
+  <action name="actionCopy_shop_data_to_clipboard">
+   <property name="text">
+    <string>Copy shop data to clipboard</string>
+   </property>
+  </action>
+  <action name="actionAutomatically_refresh_items">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Auto refresh checked tabs</string>
+   </property>
+  </action>
+  <action name="actionItems_refresh_interval">
+   <property name="text">
+    <string>Auto refresh interval...</string>
+   </property>
+  </action>
+  <action name="actionRefresh">
+   <property name="text">
+    <string>Refresh all tabs</string>
+   </property>
+  </action>
+  <action name="actionUpdate_shop">
+   <property name="text">
+    <string>Update shop thread at forums</string>
+   </property>
+  </action>
+  <action name="actionAutomatically_update_shop">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="checked">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Automatically update shop</string>
+   </property>
+  </action>
+  <action name="actionShop_template">
+   <property name="text">
+    <string>Shop template...</string>
+   </property>
+  </action>
+  <action name="actionControl_poe_xyz_is_URL">
+   <property name="text">
+    <string>control.poe.trade URL...</string>
+   </property>
+  </action>
+  <action name="actionRemoteScript">
+   <property name="text">
+    <string>Process list script</string>
+   </property>
+  </action>
+  <action name="actionAutomatically_refresh_online_status">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Automatically refresh online status</string>
+   </property>
+  </action>
+  <action name="actionList_currency">
+   <property name="text">
+    <string>List currency...</string>
+   </property>
+  </action>
+  <action name="actionExport_currency">
+   <property name="text">
+    <string>Export to CSV...</string>
+   </property>
+  </action>
+  <action name="actionRefresh_selected">
+   <property name="text">
+    <string>Refresh checked tabs</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
