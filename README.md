@@ -21,3 +21,4 @@ Either open `acquisition.pro` in Qt Creator and build or do `qmake && make`.
 `--data-dir <path>`: set the path where Acquisition should save its data. By default it's `%localappdata%\acquisition` on Windows and `~/.local/share/acquisition` on Linux.
 
 `--test`: run tests. Zero exit code on success, other values indicate errors.
+.
